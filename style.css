@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+a
+{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body
+{
+    font-family: "Raleway", "Sans serif";
+    margin: 0;
+}
+main
+{
+max-width: 1440px;
+margin: auto;
+padding: 0 3.5%;
+box-sizing: border-box;
+}
+
+
+/************ Header **********/
+
+header
+{
+    max-width: 1440px;
+    height: 90px;
+    margin: auto;
+    padding: 0 3.5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blocLogo
+{
+    width: 120px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo
+{
+    width: 100px;
+    height: auto;
+}
+nav
+{
+    height: 90px;
+    display: flex;
+    
+}
+nav a
+{
+    height: 89px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navEffectBase
+{
+    border-top: 2px #0065fc solid;
+}
+.colorBase
+{
+    color: #0065fc;
+}
+.navEffect
+{
+    border-top: 2px transparent solid;
+}
+.navEffect:hover
+{
+    border-top: 2px #0065fc solid;
+    color: #0065fc;
+}
+
+
+/*********** Section search **********/
+
+#searchIcon
+{
+    background-color: #f2f2f2;
+    border-radius: 13px 0px 0px 13px;
+    width: 12%; 
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+#searchIcon i
+{
+    transform: scale(1.10);
+}
+
+#searchBar
+{
+    display: flex;
+    width: 500px;
+    height: 49px;
+    border: 1px #f2f2f2 solid;
+    border-radius: 13px;
+    margin-bottom: 35px;
+}
+#searchBar input
+{
+    border: none;
+    width: 55%;
+    padding-left: 20px; 
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+#searchBar input::placeholder
+{
+    color: black;
+    opacity: 1;
+}
+
+#buttonWithoutIcon
+{
+    border: none;
+    border-radius: 0px 13px 13px 0px;
+    width: 33%;
+    height: 49px;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+#buttonIconSearch
+{
+    border: none;
+    border-radius: 13px;
+    width: 12%;
+    height: 49px;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+#searchBar button:hover
+{
+    background-color: blue;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+
+/*******Media queries********/
+
+@media screen and (max-width: 768px)
+{
+    /*******Header******/
+    header
+    {
+        padding: 0;
+        padding-bottom: 60px;
+    }
+    .blocLogo
+    {
+        width: 100%;
+        height: 80px;
+    }
+    .logo
+    {
+        margin-left: 20px;
+    }
+    nav
+    {
+        height: 60px;
+        width: 100%;
+        
+    }
+    nav a
+    {
+        height: 59px;
+        width: 50%;
+    }
+    .navEffectBase
+    {
+    border-top: none;
+    border-bottom: 3px #0065fc solid;
+    }
+    .navEffect
+    {
+    border-top: none;
+    border-bottom: 3px #f2f2f2 solid;
+    }
+    .navEffect:hover
+    {
+    border-top: none;
+    border-bottom: 3px #0065fc solid;
+    color: #0065fc;
+    }
+
+    /*******Search******/
+    #searchBar
+    {
+    width: 98%;
+    margin: auto;
+    margin-top: 30px;
+    
+    }
+    #searchIcon
+    {
+    width: 16%;    
+    }
+    #searchBar input
+    {
+    width: 68%;
+    }
+    #buttonIconSearch
+    {
+    width: 16%;
+    }
+    #buttonIconSearch i
+    {
+    font-size: 1.2em;
+    }
+    #buttonWithoutIcon
+    {
+    display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width : 992px)
+{
+    #buttonIconSearch
+    {
+    display: none;
+    }
+}
+   
+@media screen and (min-width: 993px)
+{
+    #buttonIconSearch
+    {
+    display: none;
+    }
+}
