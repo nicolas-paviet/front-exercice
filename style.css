@@ -25,7 +25,7 @@ main
 {
 max-width: 1440px;
 margin: auto;
-padding: 0 3.5%;
+padding: 0 3rem;
 box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@ header
     max-width: 1440px;
     height: 90px;
     margin: auto;
-    padding: 0 3.5%;
+    padding: 0 3rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -239,12 +239,184 @@ nav a
 }
 
 
+/***********Section Accommodation*********/
+#Accommodation
+{
+    margin-bottom: 60px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+#blocMarseille
+{
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    width: 804px;
+    padding: 20px 40px;
+}
+#blocInternMarseille
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blocAccommodationMarseille
+{
+    background-color: white;
+    border-radius: 20px;
+    height: 190px;
+    width: 237px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+    padding: 5px 5px;
+}
+.blocAccommodationMarseille:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+.blocImgMarseille
+{
+    width: 100%;
+    height: calc(100% - 80px);   
+}
+.blocImgMarseille img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.blocTextMarseille
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 92%;
+    height: 60px;
+    padding: 10px 10px;
+}
+.sizeTitleBlocTextMarseille
+{
+    font-size: 0.95em;
+    margin: 0;
+}
+.sizeParaBlocTextMarseille
+{
+    font-size: 0.85em;
+    margin: 0;
+}
+.star ul
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.73em;
+}
+.colorStarBlue
+{
+    color: #0065fc;
+}
+.colorStarGrey
+{
+    color: #e2e2e2;
+}
 
+/**************Most Popular***********/
+
+#blocMostPopular
+{   
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    width: 341px;
+    padding: 20px 40px;
+    
+}
+#blocInternMostPopular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.titlePopularWithIcon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.growUpIconMostPopular
+{
+    transform: scale(1.40);
+}
+.blocAccommodationMostPopular
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    height: 134px;
+    width:335px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+    padding: 5px 5px;
+}
+.blocAccommodationMostPopular:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+
+.blocImgMostPopular
+{
+    width: 40%;
+    height: 100%;
+}
+.blocImgMostPopular img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.blocTextMostPopular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 52%;
+    height: 85%;
+    padding: 10px 10px;
+    
+}
+.sizeTitleBlocTextMostPopular
+{
+    font-size: 1em;
+    margin : 0px 0px -30px 0px;
+}
+.sizeParaBlocTextMostPopular
+{
+    font-size: 0.90em;
+}
 
 /*******Media queries - de 768px (smartphone) ********/
 
 @media screen and (max-width: 767px)
 {
+    main
+    {
+        padding: 0;
+    }
     /*******Header******/
 
     header
@@ -291,6 +463,11 @@ nav a
 
     /*******Search******/
 
+    #research
+    {
+        padding: 0 1rem;
+    }
+
     #searchBar
     {
     width: 98%;
@@ -326,7 +503,7 @@ nav a
     }
     .filters ul li 
     {   
-         margin: 15px 8px 0px 0px;
+         margin: 15px 5px 0px 0px;
     }
  
     /*******Info******/
@@ -335,11 +512,72 @@ nav a
     {
          margin-top: 30px;
     }
+
+    /******accommodation*****/
+    #blocMostPopular
+    {   
+        border-radius: 0px;
+        padding: 20px 0;
+        width : 100%;
+    }
+    .titlePopularWithIcon
+    {
+        width: 90%;
+        margin: auto;
+    }
+    #blocInternMostPopular
+    {
+        width : 90%;
+        margin: auto;
+    }
+    .blocAccommodationMostPopular
+    {
+        width: 97%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #blocMarseille
+    {
+        background-color: white;
+        border-radius: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .titleAccommodationMarseille
+    {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #blocInternMarseille
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .blocAccommodationMarseille
+    {  
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 97%;
+    }
+    .showMore h3
+    {
+       margin-left: 5%; 
+    }
 }
 
 /*******Media queries entre 768px et 992 px (tablette) ********/
 @media screen and (min-width: 768px) and (max-width : 991px)
 {
+    head
+    {
+        padding: 0 2rem;
+    }
+    main
+    {
+        padding: 0 2rem;
+    }
     /*******Search******/
 
     #buttonIconSearch
@@ -367,7 +605,6 @@ nav a
 @media screen and (min-width: 992px)
 {
     /*******Search******/
-
     #buttonIconSearch
     {
     display: none;
