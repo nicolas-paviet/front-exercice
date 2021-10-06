@@ -6,6 +6,15 @@ a
     color: black;
     cursor: pointer;
 }
+ul
+{
+    padding: 0;
+    margin: 0;
+}
+li
+{
+    list-style-type: none;
+}
 
 body
 {
@@ -150,17 +159,94 @@ nav a
     background-color: blue;
     transition: 0.2s ease-in-out;
 }
+.textButtonResearch
+{
+    font-size: 18px;
+}
+
+/**************Filtres************/
+.titleFilters
+{
+    display: inline;
+    font-size: 1.1em;
+}
+.filters ul 
+{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    
+}
+.filters ul li 
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    font-weight: 700;
+    border: solid 2px #e2e2e2;
+    padding-right: 20px;
+    border-radius: 30px;
+    height: 48px;
+}
+.filters ul li:hover 
+{
+    cursor: pointer;
+    background: #DEEBFF;
+    transition: 0.3s ease-in-out;
+} 
+.filters ul li:hover .iconFilters 
+{
+    background: white;
+    transition: 0.3s ease-in-out;
+}
+  
+.iconFilters 
+{
+    background-color: #DEEBFF;
+    height: 52px;
+    width: 50px;
+    color: #0065fc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -4px;
+    margin-right: 10px;
+}
 
 
 
 
+/*********Ligne d'info***********/
+#info
+{
+   margin-top: 40px;
+}
+#info p
+{
+    display: inline;
+}
+.infoIcon
+{
+    color: #0065fc;
+    font-size: 12px;
+    padding: 5px 9px 5px 9px;
+    border: solid 1px #D9D9D9;
+    border-radius: 30px;
+    margin-right: 10px;
+}
 
 
-/*******Media queries********/
 
-@media screen and (max-width: 768px)
+
+/*******Media queries - de 768px (smartphone) ********/
+
+@media screen and (max-width: 767px)
 {
     /*******Header******/
+
     header
     {
         padding: 0;
@@ -204,6 +290,7 @@ nav a
     }
 
     /*******Search******/
+
     #searchBar
     {
     width: 98%;
@@ -231,17 +318,56 @@ nav a
     {
     display: none;
     }
+
+    /******filters*****/
+    .filters
+    {
+        margin-top: 30px;
+    }
+    .filters ul li 
+    {   
+         margin: 15px 8px 0px 0px;
+    }
+ 
+    /*******Info******/
+ 
+    #info
+    {
+         margin-top: 30px;
+    }
 }
-@media screen and (min-width: 769px) and (max-width : 992px)
+
+/*******Media queries entre 768px et 992 px (tablette) ********/
+@media screen and (min-width: 768px) and (max-width : 991px)
 {
+    /*******Search******/
+
     #buttonIconSearch
     {
     display: none;
     }
+
+    /******filters*****/
+
+    .filters ul li 
+    {   
+        margin: 20px 30px 0px 0px;
+    }
+
+    /*******Info******/
+
+    #info
+    {
+        margin-top: 30px;
+    }
 }
-   
-@media screen and (min-width: 993px)
+
+
+/*******Media queries + de 992px (pc) ********/
+@media screen and (min-width: 992px)
 {
+    /*******Search******/
+
     #buttonIconSearch
     {
     display: none;

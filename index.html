@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <header>
         <div class="blocLogo"><img class="logo" src="images/logo/Booki.png" alt="Booki" /></div>
         <nav>
@@ -19,6 +20,7 @@
     </header>
 
     <main>
+        <!--Section Research-->
         <section id="research">
 
             <div class="titleResearch">
@@ -32,8 +34,27 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <input type="text" placeholder="Marseille, France" class="research-bar" >
-                <button id="buttonWithoutIcon">Rechercher</button>
+                <button id="buttonWithoutIcon"><span class="textButtonResearch">Rechercher</span></button>
                 <button id="buttonIconSearch"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!--Filters-->
+            <div class="filters">
+                <h3 class="titleFilters">Filtres</h3>
+                <ul class="filters-ul">
+                    <li><i class="fas fa-money-bill-wave iconFilters"></i>Économique</li>
+                    <li><i class="fas fa-child iconFilters "></i>Familial</li>
+                    <li><i class="fas fa-heart iconFilters"></i>Romantique</li>
+                    <li><i class="fas fa-dog iconFilters"></i>Animaux autorisés</li>
+                </ul>
+            </div>
+
+            <div id="info">
+                <i class="fas fa-info infoIcon"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+            
+        </section>
 
 
     </main>
