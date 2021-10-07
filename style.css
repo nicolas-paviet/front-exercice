@@ -254,7 +254,7 @@ nav a
 {
     background-color: #f2f2f2;
     border-radius: 30px;
-    width: 804px;
+    width: 60%;
     padding: 20px 40px;
 }
 #blocInternMarseille
@@ -268,7 +268,7 @@ nav a
     background-color: white;
     border-radius: 20px;
     height: 190px;
-    width: 237px;
+    width: 29.5%;
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
@@ -334,7 +334,7 @@ nav a
 {   
     background-color: #f2f2f2;
     border-radius: 30px;
-    width: 341px;
+    width: 25.5%;
     padding: 20px 40px;
     
 }
@@ -363,7 +363,7 @@ nav a
     background-color: white;
     border-radius: 20px;
     height: 134px;
-    width:335px;
+    width :97%;
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
@@ -598,11 +598,137 @@ nav a
     {
         margin-top: 30px;
     }
+    /*****Accommodation*****/
+    #blocMostPopular
+    {   
+        width : 100%;
+        padding: 20px 5px;
+        
+    }
+    .titlePopularWithIcon
+    {
+        width: 95%;
+        margin: auto;
+    }
+
+    #blocInternMostPopular
+    {
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    
+    }
+    .blocAccommodationMostPopular
+    {
+        width: 31%;
+    }
+    .blocImgMostPopular
+    {
+        width: 35%;
+    }
+    .blocTextMostPopular
+    {
+        width: 70%;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+    }
+
+    #blocMarseille
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .blocAccommodationMarseille
+    {
+        width: 45%;
+    }
 }
 
 
-/*******Media queries + de 992px (pc) ********/
-@media screen and (min-width: 992px)
+/*******Media queries + de 992px (pc + large ipad) ********/
+
+@media screen and (min-width: 992px) and (max-width: 1439px)
+{
+    head
+    {
+        padding: 0 2rem;
+    }
+    main
+    {
+        padding: 0 2rem;
+    }
+    /*******Search******/
+
+    #buttonIconSearch
+    {
+    display: none;
+    }
+
+    /******filters*****/
+
+    .filters ul li 
+    {   
+        margin: 20px 30px 0px 0px;
+    }
+
+    /*******Info******/
+
+    #info
+    {
+        margin-top: 30px;
+    }
+    /*****Accommodation*****/
+    #blocMostPopular
+    {   
+        width : 100%;
+        padding: 20px 5px;
+        
+    }
+    .titlePopularWithIcon
+    {
+        width: 95%;
+        margin: auto;
+    }
+
+    #blocInternMostPopular
+    {
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+    
+    }
+    .blocAccommodationMostPopular
+    {
+        width: 31%;
+    }
+    .blocImgMostPopular
+    {
+        width: 35%;
+    }
+    .blocTextMostPopular
+    {
+        width: 70%;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+    }
+
+    #blocMarseille
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .blocAccommodationMarseille
+    {
+        width: 30%;
+    } 
+}
+
+/*******Media queries + de 1440px (pc) ********/
+@media screen and (min-width: 1440px)
 {
     /*******Search******/
     #buttonIconSearch
