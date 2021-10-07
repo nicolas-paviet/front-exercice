@@ -216,9 +216,6 @@ nav a
     margin-right: 10px;
 }
 
-
-
-
 /*********Ligne d'info***********/
 #info
 {
@@ -409,6 +406,120 @@ nav a
     font-size: 0.90em;
 }
 
+/****************Activity**************/
+#activity
+{
+    margin-top: -20px;
+}
+#conteneurActivity
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+  
+}
+.blocActivitySingle
+{
+    height :445px;
+    width: 22.6%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+.blocActivitySingle:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+.blocActivityDouble
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height :445px;
+    width: 22.6%; 
+}
+#blocDoublePart1
+{
+    height :238px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+    
+}
+#blocDoublePart2
+{
+    height :164px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+#blocDoublePart3
+{
+    height :195px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+#blocDoublePart4
+{
+    height :210px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+#blocDoublePart1:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+#blocDoublePart2:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+#blocDoublePart3:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+#blocDoublePart4:hover
+{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: ease 0.4s;
+}
+.blocTextAct
+{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    
+}
+.blocImgAct
+{
+    height: calc(100% - 55px);
+}
+.marginTextAct
+{
+    margin : 0px 0px 0px 15px;
+    font-size: 1.10em;
+}
+.blocImgAct img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 /*******Media queries - de 768px (smartphone) ********/
 
 @media screen and (max-width: 767px)
@@ -565,7 +676,69 @@ nav a
     {
        margin-left: 5%; 
     }
+
+    /******activity********/
+    #activity
+    {
+        margin-top: -50px;
+    }
+    .titleActivity
+    {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #conteneurActivity
+    {
+    flex-direction: column;
+    }
+    .blocActivitySingle
+    {
+    width: 90%;
+    height: 190px;
+    margin:auto;
+    margin-bottom: 7px;
+    
+    }
+    .blocActivityDouble
+    {
+        width: 90%;
+        height: 400px;
+        margin:auto;
+        margin-bottom: 7px;
+     
+    }
+    #blocDoublePart1
+    {
+        width: 100%;
+        height: 190px;
+        margin:auto;
+        
+    
+    }
+    #blocDoublePart2
+    {
+        width: 100%;
+        height: 190px;
+        margin:auto;
+        
+    }
+    #blocDoublePart3
+    {
+        width: 100%;
+        height: 190px;
+        margin:auto;
+        
+    }
+    #blocDoublePart4
+    {
+        width: 100%;
+        height: 190px;
+        margin:auto;
+       
+    }
 }
+
 
 /*******Media queries entre 768px et 992 px (tablette) ********/
 @media screen and (min-width: 768px) and (max-width : 991px)
