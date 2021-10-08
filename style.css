@@ -15,10 +15,17 @@ li
 {
     list-style-type: none;
 }
-
+html
+{
+    height: 100%;
+    
+}
 body
 {
     font-family: "Raleway", "Sans serif";
+    position: relative; 
+    padding-bottom: 15em;
+    min-height: 100%;
     margin: 0;
 }
 main
@@ -27,6 +34,7 @@ max-width: 1440px;
 margin: auto;
 padding: 0 3rem;
 box-sizing: border-box;
+
 }
 
 
@@ -520,6 +528,53 @@ nav a
     border-top-right-radius: 20px;
 }
 
+/**************Footer**************/
+#footer
+{
+    width: 100%;
+    background-color: #f2f2f2;
+    position: absolute; 
+    bottom: 0;
+}
+#blocFooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    
+}
+.blocsInFooter
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 2rem 2rem;
+    
+}
+.blocsInFooter h3
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.05em;
+}
+.blocsInFooter p
+{
+    margin-bottom: 0;
+    font-size: 0.90em;
+}
+.blocsInFooter a:hover
+{
+    text-decoration-line: underline;
+}
+.marginBlocAssistance
+{
+    margin-right: 143px;
+}
+
 /*******Media queries - de 768px (smartphone) ********/
 
 @media screen and (max-width: 767px)
@@ -527,6 +582,10 @@ nav a
     main
     {
         padding: 0;
+    }
+    body
+    {
+        padding-bottom: 29em;
     }
     /*******Header******/
 
@@ -737,6 +796,42 @@ nav a
         margin:auto;
        
     }
+    /*******Footer********/
+
+    #blocFooter
+    {
+    flex-direction: column;  
+    align-items: flex-start;
+    padding: 0;
+    }
+    .blocsInFooter
+    {
+    width: 60%;
+    padding: 2em 0em 1em 1em;
+    }
+ 
+}
+
+/***********Media queries entre 600 et 768 (large phone) *************/
+@media screen and (min-width: 600px) and (max-width: 767px)
+{
+    body
+    {
+        padding-bottom: 15em;
+    }
+    #blocFooter
+    {
+    flex-direction: row;
+    padding: 0;
+    } 
+    .blocsInFooter
+    {
+    width: 40%;
+    }
+    .marginBlocAssistance
+    {
+    margin-right: 50px;
+    }
 }
 
 
@@ -750,6 +845,10 @@ nav a
     main
     {
         padding: 0 2rem;
+    }
+    body
+    {
+        padding-bottom: 15em;
     }
     /*******Search******/
 
@@ -816,6 +915,16 @@ nav a
     .blocAccommodationMarseille
     {
         width: 45%;
+    }
+
+    /******footer*****/
+
+    .blocsInFooter
+    {
+    width: 30%;
+    padding: 2em 0;
+    margin-right: 1em;
+    
     }
 }
 
@@ -909,3 +1018,5 @@ nav a
     display: none;
     }
 }
+
+
